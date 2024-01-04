@@ -24,7 +24,7 @@ const handleDelete=(index)=>{
   return ( 
     <div className='flex flex-col max-w-[800px]  min-w-[200px] mx-[20px] sm:mx-auto mt-[50px] gap-[30px]'>
      <div className="alert-box failure fixed bottom-[10vh] z-[300] left-[50%] translate-x-[-50%]">Task Incomplete!</div>
-     <div class="alert-box success fixed bottom-[10vh] z-[300] left-[50%] translate-x-[-50%]">Task Completed!</div>
+     <div className="alert-box success fixed bottom-[10vh] z-[300] left-[50%] translate-x-[-50%]">Task Completed!</div>
       {data.map((note,index)=>{
       
            return (
