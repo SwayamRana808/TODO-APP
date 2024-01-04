@@ -33,7 +33,10 @@ const appRouter=createBrowserRouter([
         element :<Notes/>,
        
       }  ]
-    } 
+    },{
+      path:"/Notes",
+      element:<Notes/>
+    }
   
   ])
  
