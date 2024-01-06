@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector ,useDispatch} from 'react-redux';
-import Page from './page';
+import Page from './Page';
 const Notes = () => {
     const data=useSelector((state)=>{
         return state.users;

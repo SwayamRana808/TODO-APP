@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import {Link} from "react-router-dom";
 const Header = () => {
     const data=useSelector((state)=>{
-        return state.users;
+        return state.user;
     })
     console.log(data)
 
