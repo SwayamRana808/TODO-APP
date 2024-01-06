@@ -3,9 +3,9 @@ import { useSelector } from 'react-redux'
 import {Link} from "react-router-dom";
 const Header = () => {
     const data=useSelector((state)=>{
-        return state.user;
+        return state.users;
     })
-    console.log(data)
+    console.log(data,"jhyjhgj,hf")
 
     useEffect(()=>{
         var width = window.innerWidth;
