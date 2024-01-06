@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react'
 import { useDispatch } from 'react-redux';
 import { addNote } from "../utils/slice";
-
+import { addColor } from '../utils/colorSlice';
 const Body = () => {
     const [areaText,setareaText]=useState("");
     const [notes,setNotes]=useState([])
@@ -13,10 +13,12 @@ const Body = () => {
     //     console.log()
     // },[notes])
       const handleNote=()=>{
-      const updatenote =areaText;
-      dispatch(addNote(updatenote))
-      setNotes([updatenote,...notes]);
-    }
+                          const updatenote =areaText;
+                          dispatch(addNote(updatenote))
+                          dispatch(addColor(false));
+                          setNotes([updatenote,...notes]);
+                          
+                }
   return (
     <div className=''>
       <textarea value={areaText} spellCheck="false" onChange={(e)=>{

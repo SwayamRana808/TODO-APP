@@ -7,6 +7,7 @@ const userSlice=createSlice({
       addNote(state,action){
         state.push(action.payload)
         console.log(action.payload)
+       
       },
       removeNote(state,action){
         state.splice(action.payload,1);

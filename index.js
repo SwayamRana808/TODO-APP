@@ -33,11 +33,7 @@ const appRouter=createBrowserRouter([
         element :<Notes/>,
        
       }  ]
-    },{
-      path:"/Notes",
-      element:<Notes/>
     }
-  
   ])
  
 const root=ReactDOM.createRoot(document.getElementById("root"));
